@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Appointment</title>
+    <link rel="stylesheet" href="../assets/css/updateAppointment.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header"></div>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <form id="updateForm" onsubmit="updateAppointment(event)">
+                    <h2>Update Appointment</h2>
+                    
+                    <label for="appointmentId">Appointment ID:</label>
+                    <input type="text" id="appointmentId" name="appointmentId" required readonly />
+                    
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" required readonly />
+                    
+                    <label for="doctorName">Doctor Name:</label>
+                    <input type="text" id="doctorName" name="doctorName" required readonly />
+                    
+                    <label for="appointmentDate">New Date:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required />
+                    
+                    <label for="appointmentTime">New Time:</label>
+                    <select id="appointmentTime" name="appointmentTime" required>
+                        <option value="">Select Time</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                    </select>
+                    
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="scheduled">Scheduled</option>
+                        <option value="completed">Completed</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                    
+                    <button type="submit">Update Appointment</button>
+                </form>
+            </main>
+
+            <!-- Footer -->
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+    <script src="../js/updateAppointment.js" defer></script>
+
+    <script>
+        // Load appointment data on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const appointmentId = urlParams.get('appointmentId');
+            
+            if (appointmentId) {
+                // Load appointment data (placeholder)
+                document.getElementById('appointmentId').value = appointmentId;
+                document.getElementById('patientName').value = 'John Doe';
+                document.getElementById('doctorName').value = 'Dr. Smith';
+                document.getElementById('appointmentDate').value = '2024-12-25';
+                document.getElementById('appointmentTime').value = '10:00';
+                document.getElementById('status').value = 'scheduled';
+            }
+        });
+
+        function updateAppointment(event) {
+            event.preventDefault();
+            
+            const formData = {
+                appointmentId: document.getElementById('appointmentId').value,
+                date: document.getElementById('appointmentDate').value,
+                time: document.getElementById('appointmentTime').value,
+                status: document.getElementById('status').value
+            };
+            
+            console.log('Appointment updated:', formData);
+            alert('Appointment updated successfully!');
+            
+            // Redirect back
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

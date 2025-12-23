@@ -1,0 +1,154 @@
+/* Additional Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #015c5d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #015c5d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-column {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.button {
+    background-color: #015c5d;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #017d7e;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #015c5d;
+}
+
+/* Select Dropdown */
+.select-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+    background-color: #015c5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #017d7e;
+}
+
+/* Admin Button */
+.adminBtn {
+    background-color: #015c5d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.adminBtn:hover {
+    filter: brightness(1.2);
+}

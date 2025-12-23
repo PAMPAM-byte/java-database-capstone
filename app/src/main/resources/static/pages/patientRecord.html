@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Record</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header"></div>
+
+            <!-- Main Content -->
+            <main class="main-content" style="padding: 30px;">
+                <h2>Patient Medical Record</h2>
+                
+                <div id="patientInfo" style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <h3>Patient Information</h3>
+                    <p><strong>ID:</strong> <span id="patientId"></span></p>
+                    <p><strong>Name:</strong> <span id="patientName"></span></p>
+                    <p><strong>Email:</strong> <span id="patientEmail"></span></p>
+                    <p><strong>Phone:</strong> <span id="patientPhone"></span></p>
+                    
+                    <h3 style="margin-top: 30px;">Prescription History</h3>
+                    <div id="prescriptionList"></div>
+                    
+                    <h3 style="margin-top: 30px;">Appointment History</h3>
+                    <div id="appointmentList"></div>
+                </div>
+                
+                <button onclick="window.history.back()" style="margin-top: 20px;" class="button">Go Back</button>
+            </main>
+
+            <!-- Footer -->
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+    <script src="../js/patientRecordServices.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const patientId = urlParams.get('patientId');
+            
+            // Load patient data (placeholder)
+            document.getElementById('patientId').textContent = patientId || 'P001';
+            document.getElementById('patientName').textContent = 'John Doe';
+            document.getElementById('patientEmail').textContent = 'john@example.com';
+            document.getElementById('patientPhone').textContent = '+1234567890';
+            
+            // Load prescriptions
+            document.getElementById('prescriptionList').innerHTML = '<p>No prescriptions on record.</p>';
+            
+            // Load appointments
+            document.getElementById('appointmentList').innerHTML = '<p>No appointments on record.</p>';
+        });
+    </script>
+</body>
+</html>
