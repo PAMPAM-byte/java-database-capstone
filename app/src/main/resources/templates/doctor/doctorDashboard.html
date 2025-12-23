@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/doctorDashboard.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header"></div>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <h2>Doctor Dashboard</h2>
+                
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" class="searchBar" placeholder="Search by patient name..." />
+                
+                <!-- Filter Section -->
+                <div class="filter-wrapper">
+                    <button onclick="filterByToday()">Today's Appointments</button>
+                    <input type="date" id="dateFilter" onchange="filterByDate()" />
+                </div>
+
+                <!-- Patient Records Table -->
+                <table id="patientTable">
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Prescription</th>
+                        </tr>
+                    </thead>
+                    <tbody id="patientTableBody">
+                        <!-- Rows will be populated dynamically -->
+                    </tbody>
+                </table>
+
+                <!-- No Patient Message -->
+                <div class="noPatientRecord" id="noPatientRecord" style="display: none;">
+                    No patient records found.
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+    <script type="module" src="../js/services/doctorServices.js" defer></script>
+    <script type="module" src="../js/doctorDashboard.js" defer></script>
+
+    <script>
+        function filterByToday() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('dateFilter').value = today;
+            filterByDate();
+        }
+
+        function filterByDate() {
+            const selectedDate = document.getElementById('dateFilter').value;
+            console.log('Filtering by date:', selectedDate);
+            // Filter logic will be implemented with API calls
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prescription</title>
+    <link rel="stylesheet" href="../assets/css/addPrescription.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header"></div>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <form id="prescriptionForm" onsubmit="submitPrescription(event)">
+                    <h2>Add Prescription</h2>
+                    
+                    <label for="patientId">Patient ID:</label>
+                    <input type="text" id="patientId" name="patientId" required readonly />
+                    
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" required readonly />
+                    
+                    <label for="diagnosis">Diagnosis:</label>
+                    <textarea id="diagnosis" name="diagnosis" required></textarea>
+                    
+                    <label for="medication">Medication:</label>
+                    <textarea id="medication" name="medication" required></textarea>
+                    
+                    <label for="dosage">Dosage Instructions:</label>
+                    <textarea id="dosage" name="dosage" required></textarea>
+                    
+                    <label for="notes">Additional Notes:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                    
+                    <button type="submit">Submit Prescription</button>
+                </form>
+            </main>
+
+            <!-- Footer -->
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+    <script src="../js/addPrescription.js" defer></script>
+
+    <script>
+        // Load patient data on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get patient data from URL params or localStorage
+            const urlParams = new URLSearchParams(window.location.search);
+            const patientId = urlParams.get('patientId');
+            const patientName = urlParams.get('patientName');
+            
+            if (patientId && patientName) {
+                document.getElementById('patientId').value = patientId;
+                document.getElementById('patientName').value = patientName;
+            }
+        });
+
+        function submitPrescription(event) {
+            event.preventDefault();
+            
+            const formData = {
+                patientId: document.getElementById('patientId').value,
+                patientName: document.getElementById('patientName').value,
+                diagnosis: document.getElementById('diagnosis').value,
+                medication: document.getElementById('medication').value,
+                dosage: document.getElementById('dosage').value,
+                notes: document.getElementById('notes').value,
+                date: new Date().toISOString()
+            };
+            
+            console.log('Prescription submitted:', formData);
+            alert('Prescription added successfully!');
+            
+            // Redirect back to doctor dashboard
+            window.location.href = 'doctorDashboard.html';
+        }
+    </script>
+</body>
+</html>
