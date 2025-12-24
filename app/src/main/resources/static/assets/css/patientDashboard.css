@@ -1,0 +1,122 @@
+/* Doctor Dashboard Specific Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+/* Search and Filter */
+#searchBar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-wrapper {
+    margin-bottom: 20px;
+}
+
+.filter-wrapper button {
+    background-color: #015c5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filter-wrapper button:hover {
+    background-color: #017d7e;
+}
+
+.filter-wrapper input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Patient Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: rgba(1, 92, 93, 0.1);
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #015c5d;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+tbody td {
+    padding: 15px;
+}
+
+/* Prescription Button */
+.prescription-btn {
+    background-color: #015c5d;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.prescription-btn:hover {
+    transform: scale(1.05);
+}
+
+/* No Patient Record Message */
+.noPatientRecord {
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+    
+    thead th, tbody td {
+        padding: 10px;
+    }
+}

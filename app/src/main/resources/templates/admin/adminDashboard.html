@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/adminDashboard.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header"></div>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <h2>Admin Dashboard - Manage Doctors</h2>
+                
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" class="searchBar" placeholder="Search by doctor name..." />
+                
+                <!-- Filter Section -->
+                <div class="filter-wrapper">
+                    <select class="filter-select" id="filterTime">
+                        <option value="">Filter by Time</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                    
+                    <select class="filter-select" id="filterSpecialty">
+                        <option value="">Filter by Specialty</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="neurology">Neurology</option>
+                    </select>
+                </div>
+
+                <!-- Doctor Cards Container -->
+                <div id="content"></div>
+            </main>
+
+            <!-- Footer -->
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding Doctor -->
+    <div id="modal" class="modal">
+        <div id="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/util.js" defer></script>
+    <script src="../js/render.js" defer></script>
+    <script src="../js/components/header.js" defer></script>
+    <script src="../js/components/footer.js" defer></script>
+    <script type="module" src="../js/services/adminDashboard.js" defer></script>
+    <script type="module" src="../js/components/doctorCard.js" defer></script>
+
+    <script>
+        // Close modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeBtn = document.getElementById('closeModal');
+            const modal = document.getElementById('modal');
+            
+            if (closeBtn) {
+                closeBtn.onclick = function() {
+                    modal.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

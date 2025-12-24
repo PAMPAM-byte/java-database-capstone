@@ -1,0 +1,68 @@
+{
+  "APIEndpoint": "https://cloud.ibm.com",
+  "IsPrivate": false,
+  "IsAccessFromVPC": false,
+  "ConsoleEndpoint": "https://cloud.ibm.com",
+  "ConsolePrivateEndpoint": "",
+  "ConsolePrivateVPCEndpoint": "",
+  "CloudType": "public",
+  "CloudName": "bluemix",
+  "CRIType": "",
+  "Region": "us-south",
+  "RegionID": "ibm:yp:us-south",
+  "IAMEndpoint": "https://iam.cloud.ibm.com",
+  "IAMPrivateEndpoint": "",
+  "IAMPrivateVPCEndpoint": "",
+  "IAMToken": "Bearer eyJraWQiOiIyMDE5MDcyNCIsImFsZyI6IlJTMjU2In0.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTMyNjlkMmQ3LTRkNDItNDhjMC04NGEyLTFjMmFmMDgyNDU1OCIsImlkIjoiaWFtLVNlcnZpY2VJZC0zMjY5ZDJkNy00ZDQyLTQ4YzAtODRhMi0xYzJhZjA4MjQ1NTgiLCJyZWFsbWlkIjoiaWFtIiwianRpIjoiODY4ZGUxM2QtZDQ0Yi00MTM3LWI0NmUtNzdjZTQ0OTkyMTVlIiwiaWRlbnRpZmllciI6IlNlcnZpY2VJZC0zMjY5ZDJkNy00ZDQyLTQ4YzAtODRhMi0xYzJhZjA4MjQ1NTgiLCJuYW1lIjoic24tbGFicy1tZWxvdmlrayIsInN1YiI6IlNlcnZpY2VJZC0zMjY5ZDJkNy00ZDQyLTQ4YzAtODRhMi0xYzJhZjA4MjQ1NTgiLCJzdWJfdHlwZSI6IlNlcnZpY2VJZCIsImF1dGhuIjp7InN1YiI6IlNlcnZpY2VJZC0zMjY5ZDJkNy00ZDQyLTQ4YzAtODRhMi0xYzJhZjA4MjQ1NTgiLCJpYW1faWQiOiJpYW0tU2VydmljZUlkLTMyNjlkMmQ3LTRkNDItNDhjMC04NGEyLTFjMmFmMDgyNDU1OCIsInN1Yl90eXBlIjoiU2VydmljZUlkIiwibmFtZSI6InNuLWxhYnMtbWVsb3Zpa2sifSwiYXBpa2V5X3V1aWQiOiJBcGlLZXktYmJmZWFiMmYtNzMwNS00Zjc2LWIyMWQtZjhhZTVkZDY1Nzg5IiwiYWNjb3VudCI6eyJ2YWxpZCI6dHJ1ZSwiYnNzIjoiZjY3MjM4MmUxYjQzNDk2YjgzZjdhODJmZDMxYTU5ZTgiLCJmcm96ZW4iOnRydWUsImlzX2VudGVycHJpc2VfYWNjb3VudCI6ZmFsc2UsImVudGVycHJpc2VfaWQiOiJkOGUzNWVkZjBhNjk0ZTMxYmJmMmIyZWZlNTE3MTQ3NSJ9LCJpYXQiOjE3NjY1MTQ1ODAsImV4cCI6MTc2NjUxODE4MCwiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOmFwaWtleSIsInNjb3BlIjoiaWJtIG9wZW5pZCIsImNsaWVudF9pZCI6ImJ4IiwiYWNyIjoxLCJhbXIiOlsicHdkIl19.r_GLkjPsx1XzIReOZxviAOZu7Udmk8vYzdgDR27qljZ0RwHZ2nnInfMzFIVKIEmSVCLuCqo-6Elcz8SssGD7df9Fxug3nS5jWEnFcHzc1YL2Q-9XXH_loPC4ih9txdSU7mWDyyg_8xYXRwQpo5BThSGdcjris17uSjva3bkLeTuOGYX5rdAmPg709ZVUChurQ2kcx9AR8byPBDZT-6HN4SkmOMggy4PktpYoro8utx7OvdiUEKXkhf7iSdy8-Ev4w0dC4h6usBEkG2ZijefH7mFp8527Hq3-IGuZDsxYThor28bZPKPq2th_2li8OvvMdh-SuWIwPNuR8tIUyf4Ogg",
+  "IAMRefreshToken": "eyJhbGciOiJydCJ9.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTMyNjlkMmQ3LTRkNDItNDhjMC04NGEyLTFjMmFmMDgyNDU1OCIsImFjY291bnRfaWQiOiJmNjcyMzgyZTFiNDM0OTZiODNmN2E4MmZkMzFhNTllOCJ9.jDyERwTSy2K8Leyo8aGAMZ9UOuaJT2Qm-Fggb9PpNhtGuA51j4iQAHaFpPrIee-bWVaMBmQLKxns8a1x2mxa4cXwNOvOCt7jjSL6HEclBvYoKTsM0-fgcMz44E7N6I6TF5ueYnkg892YeCVeGB8LbcKeOIya9ZNIiz1AtSPsMZ44GyYqI06XL32qZkBiqqJGNgysR-VUTbZ9mwsMoFTuOZ2kxftKdmZ3MWQrCO4zEp6P1pEjcDDkzmE8YIpmQXudl336sZWz0EIGL2ih5wWwlqz-4QyEDHUOJc7Lfqu9khoJUUriwERNqY_swfp-KjTrZbWzfOch7lnboE1xuPttbB5CEvsmxi8p9iPha4C8F7TClfltgoIU4blLzF7BDyT8b03JxYh8VpGf2yRwhmqf8zFXmVqx11Q4-9fpc6qvaZCoibiZJ3TerK01o5Tan4zhgtdv25wp2N49X86ZiF3oqvSx6SirqlwXo_gDxRcKp1ZDTFFXA5rUTl2rBTzFEZl1RJSbIwCgCuvJHo3110hkQ94pfzxHPUZ-g33vCSodTGJV7sNRLFj3sBjDAnx3bikDdufAHFpZUEhJdZNro3MZuQAf5j1wlM1l-x4rRHNKFruVxQyFjdQ_AYOghPcdn7TOlrcsG2kiIqiRPTclsHgJKtvh3FDyPBFxszlXT7dT5DcJ7k2BxJmwcEhITwYTlO_mU46mK3HzHO74nqQqWraOA5xfHTF8ZU84B-oJlWAK9KUXHLRrjGd1YN_uNoJF31O6WDOEojeeZurIPduf_ntSFB-c2X9pR2_V_nWFEu-iWqG2nLxMGHx6iFsEFuCZ45m1RuSt81vTu1HD4d-28jt3WP5W4tWeM5A49LbWqr6MS8Mi5-a0qw7GI386ElKLzZ-4SuHxTYa38cugmiD1LO0qtLzWiiJWXev440qCaQ_AE62xR71hqZDE2lnS2mxm5GlRLFBqmZ6uT61WkjA9EvpkYuE7Ux-W6-k_DnoHaOHUHP5jigP8a-ATirU3W9GKiXWoScBZZwvPzHlr2ZKFB77f0x4ENaeWzALai6IinXtq0XiXOvMwyWuqJrKCKOBvvUjkuQUq4XOFkhCbZG9DUd6K2vOo2VI6eZeuPA8KKFix1d9uIimtboMSgMDK2_IB45mdQTycyGavBjTV73Vmdg5AiQ9hvHtWhiiJbfKtWqdrbaRMLTFsILv81O39b_Xc8yOpTcov8DCN9lAAnHbe2kLvdUWaSQlsBMLGjUWkhUETCRiItuiY6OvLD10bPDKGmsI98j8XGXppXaOivIbAuk5pPvThXZE7RkCpW5VLIQhC4ughhrBOdaR4j_62FxQfMMd7YwHWtvZyrDctqDZWik_23b8tRQylY34iGy-ObA5fwp-rmy6aYgfGKkeq_m__0Jpv2lXCrEKK3LqeRYFUgxXArqX8zrtHAHZlX_QB8BnhNgrwPcj7rQDJYLZuEOz20coJMQM",
+  "IsLoggedInAsCRI": false,
+  "Account": {
+    "GUID": "f672382e1b43496b83f7a82fd31a59e8",
+    "Name": "QuickLabs - IBM Skills Network",
+    "Owner": ""
+  },
+  "Profile": {
+    "ID": "",
+    "Name": "",
+    "ComputeResource": {
+      "Name": "",
+      "ID": ""
+    },
+    "User": {
+      "Name": "",
+      "ID": ""
+    }
+  },
+  "ResourceGroup": {
+    "GUID": "",
+    "Name": "",
+    "State": "",
+    "Default": false,
+    "QuotaID": ""
+  },
+  "LoginAt": "2025-12-23T13:29:40-05:00",
+  "CFEETargeted": false,
+  "CFEEEnvID": "",
+  "PluginRepos": [
+    {
+      "Name": "IBM Cloud",
+      "URL": "https://plugins.cloud.ibm.com"
+    }
+  ],
+  "SSLDisabled": false,
+  "Locale": "",
+  "MessageOfTheDayTime": 1766514584,
+  "LastSessionUpdateTime": 1766514583,
+  "Trace": "",
+  "ColorEnabled": "",
+  "HTTPTimeout": 0,
+  "CLIInfoEndpoint": "",
+  "CheckCLIVersionDisabled": true,
+  "UsageStatsDisabled": false,
+  "UsageStatsEnabled": false,
+  "UsageStatsEnabledLastUpdate": "0001-01-01T00:00:00Z",
+  "SDKVersion": "1.1.1",
+  "UpdateCheckInterval": 0,
+  "UpdateRetryCheckInterval": 0,
+  "UpdateNotificationInterval": 0
+}
